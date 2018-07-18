@@ -42,10 +42,6 @@ module.exports = ( env ) => {
             'sass-loader'
           ]
         }
-        // { 
-        //   test: /\.jpg$/, 
-        //   loader: "file-loader" 
-        // }
       ]
     },
     plugins: [ CopyWebpack, HMR, MiniCSSExtract ],

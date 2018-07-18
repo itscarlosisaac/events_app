@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Header from './Header'
 import Hero from './Hero';
-
+import EventList from './EventList'
 
 export default class App extends Component {
   render() {
@@ -9,9 +9,7 @@ export default class App extends Component {
       <div className='app'>
         <Header />
         <Hero />
-        <h1>
-          App
-        </h1>
+        <EventList />
       </div>
     )
   }
