@@ -1,0 +1,28 @@
+.app__event__list{
+  max-width: 1020px;
+  margin: 0 auto;
+  .app__title{
+    text-align: center;
+    margin: 50px 0;
+    h1{
+      font-family: $body-font;
+      margin: 0 0 10px 0;
+      letter-spacing: 1pt;
+      font-size: 2em;
+      font-weight: 300;
+    }
+    p{
+      font-family: $body-font;
+      margin: 0;
+      font-size: .8em;
+      color: $main-orange;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2pt;
+    }
+  }
+  .app__events{
+    display: flex;
+    justify-content: space-around;
+  }
+}
