@@ -71,9 +71,9 @@
     text-transform: uppercase;
     @include animation(200ms, all);
     &:hover{
-      background-color:$main-blue;
+      background-color:$main-orange;
       color:#fff;
-      border-color:$main-blue;
+      border-color:$main-orange;
     }
   }
 }
