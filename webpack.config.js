@@ -37,11 +37,15 @@ module.exports = ( env ) => {
           test: /\.(sa|sc|c)ss$/,
           use: [
             !devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-            'css-loader',
+            'css-loader?url=false',
             'postcss-loader',
             'sass-loader'
           ]
         }
+        // { 
+        //   test: /\.jpg$/, 
+        //   loader: "file-loader" 
+        // }
       ]
     },
     plugins: [ CopyWebpack, HMR, MiniCSSExtract ],
