@@ -27,6 +27,9 @@ module.exports = ( env ) => {
       filename: 'app.bundle.js',
       path: distDir
     },
+    performance: {
+      hints: false
+    },
     module: {
       rules: [
         {
