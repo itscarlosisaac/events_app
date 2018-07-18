@@ -7,3 +7,4 @@
 /* Importing partials */
 @import './components/_header.scss';
 @import './components/_navigation.scss';
+@import './components/_hero.scss';
