@@ -1,0 +1,10 @@
+.app__header{
+  font-family: $body-font;
+  max-width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}

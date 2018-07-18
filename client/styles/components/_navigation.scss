@@ -1,0 +1,21 @@
+@import '../settings/_mixins.scss';
+.app__nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+    margin: 0 10px;
+    font-weight: 400;
+    letter-spacing: .3pt;
+    font-size: .9em;
+    a {
+      text-decoration: none;
+      color: $main-blue;
+      @include animation(100ms, color);
+      &:hover {
+        color: $main-orange;
+      }
+    }
+  }
+}

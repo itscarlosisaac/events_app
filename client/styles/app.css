@@ -1,0 +1,9 @@
+/* Importing global settings */
+@import './settings/_settings.scss';
+
+/* General styles */
+/* @import './general/_columns.scss'; */
+
+/* Importing partials */
+@import './components/_header.scss';
+@import './components/_navigation.scss';
