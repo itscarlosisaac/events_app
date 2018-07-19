@@ -14,7 +14,7 @@ export default class Hero extends Component {
           <h1 className="app__hero__title">Getting Free Publicity For Your Business</h1>
           <p className="app__hero__tagline">Get Ready for the next event</p> 
           <div className="app__hero__footer">
-            <button className="app__hero__button">Buy Ticket</button>
+            <button className="app__hero__button">Learn More</button>
           </div>
         </div>
       </div>
