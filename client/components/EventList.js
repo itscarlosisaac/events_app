@@ -28,12 +28,10 @@ export default class EventList extends Component {
             }) 
           }
           </div>
-          <div>
-            <button className="app__button app__button--all-events">
-              All Events
-              <ArrowRight size={25} color={"#fff"} />
-            </button>
-          </div>
+          <button className="app__button app__button--all-events">
+            All Events
+            <ArrowRight size={20} color={"#fff"} />
+          </button>
         </div>
       </Fragment>
     )

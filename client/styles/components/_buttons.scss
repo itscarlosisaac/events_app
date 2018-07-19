@@ -1,28 +1,30 @@
 .app__button {
   cursor: pointer;
   &--all-events {
-    padding: 10px 22px 10px 30px;
+    padding: 15px 30px;
     border-radius: 100px;
     border: none;
-    color: #fff;
-    font-size: 1em;
-    background: #fcb95a;
+    color: #aeaeae;
+    font-size: .8em;
+    background: transparent;
     font-weight: 500;
     margin: 0 auto;
     display: block;
+    border: 1px solid #f0f0f0;
+    position: relative;
     svg {
       margin-left: 5px;
       position: relative;
+      transition: all ease 1s;
+      border-radius: 100px;
+      background: #fcb95a;
+      position: absolute;
+      right: -10px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
     }
-    &:hover{
-      svg{
-        animation: rightArrow 1s linear infinite alternate;
-      }
+    &:hover {
     }
   }
-}
-
-@keyframes rightArrow {
-  from {left: 0px;}
-  to {left: 5px;}
 }
