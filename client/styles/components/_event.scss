@@ -1,37 +1,68 @@
-.app__event{
-  padding: 0 20px;
+@import '../settings/mixins';
+
+.app__event {
+  padding: 0 20px 20px;
   flex-basis: 30%;
   box-sizing: border-box;
   border: 1px solid rgba(85, 85, 85, 0.2);
   border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 40px;
-  &__thumb{
+  margin-bottom: 60px;
+  position: relative;
+  &__thumb {
     padding: 0;
-    margin: 0 -20px 30px -20px;
-    img{
+    margin: 0 -20px 20px -20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    img {
       width: 100%;
     }
   }
-  &__details{
+  &__details {
     text-align: left;
     font-weight: 500;
     line-height: 1.5em;
     font-size: .9em;
-    h2{
+    h2 {
       font-size: 1.1em;
-      color:#4d4d4d;
+      color: #4d4d4d;
     }
-    p{
+    p {
       color: #929292;
     }
-    button{
+    button {
       border-radius: 1000px;
-      color:black;
+      color: black;
       background: white;
     }
   }
-  &__cta{
-    
+  &__cta {
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 100px;
+    font-size: .9em;
+    font-weight: 500;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    height: 37px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @include animation(150ms, all);
+    &:hover{
+      color:darken($main-orange, 50%);
+      background: $main-orange;
+    }
+  }
+  small{
+    text-transform: uppercase;
+    color:#cacaca;
+  }
+  &__m{
+    margin-right: 7px;
   }
 }

@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Event from './Event';
+import ArrowRight from 'react-icons/lib/md/keyboard-arrow-right'
 import Data from '../dummy/data';
 
 export default class EventList extends Component {
@@ -26,6 +27,12 @@ export default class EventList extends Component {
               return <Event data={event} />
             }) 
           }
+          </div>
+          <div>
+            <button className="app__button app__button--all-events">
+              All Events
+              <ArrowRight size={25} color={"#fff"} />
+            </button>
           </div>
         </div>
       </Fragment>

@@ -34,12 +34,12 @@ export default class Event extends Component {
 }
 
 Event.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  thumbnail: PropTypes.string.isRequired,
-  excerpt: PropTypes.string.isRequired,
-  leader: PropTypes.string.isRequired,
-  date: PropTypes.any.isRequired,
-  location: PropTypes.string.isRequired,
-  speakers: PropTypes.arrayOf(PropTypes.string),
+  // title: PropTypes.string.isRequired,
+  // description: PropTypes.string.isRequired,
+  // thumbnail: PropTypes.string.isRequired,
+  // excerpt: PropTypes.string.isRequired,
+  // leader: PropTypes.string.isRequired,
+  // date: PropTypes.any.isRequired,
+  // location: PropTypes.string.isRequired,
+  // speakers: PropTypes.arrayOf(PropTypes.string),
 }
