@@ -1,6 +1,6 @@
 /* Importing global settings */
-@import './settings/_general.scss';
 @import './settings/_settings.scss';
+@import './settings/_general.scss';
 
 /* General styles */
 /* @import './general/_columns.scss'; */
@@ -11,3 +11,4 @@
 @import './components/_hero.scss';
 @import './components/_event_list.scss';
 @import './components/_event.scss';
+@import './components/_footer.scss';

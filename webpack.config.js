@@ -5,7 +5,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const srcDir = path.resolve(__dirname, 'client');
 const distDir = path.resolve(__dirname, 'dist');
-const devMode = process.env.NODE_ENV === 'development';
+// const devMode = process.env.NODE_ENV === 'development';
+const devMode = 'development';
 
 module.exports = ( env ) => {
   const MiniCSSExtract = new MiniCssExtractPlugin({
@@ -28,7 +29,7 @@ module.exports = ( env ) => {
       path: distDir
     },
     performance: {
-      hints: false
+      // hints: false
     },
     module: {
       rules: [
@@ -39,7 +40,7 @@ module.exports = ( env ) => {
         }, {
           test: /\.(sa|sc|c)ss$/,
           use: [
-            !devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+            devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
             'css-loader?url=false',
             'postcss-loader',
             'sass-loader'
