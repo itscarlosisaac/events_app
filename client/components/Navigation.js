@@ -1,14 +1,15 @@
 import React, { Component, Fragment } from 'react'
+import {NavLink} from 'react-router-dom';
 
 export default class Navigation extends Component {
   render() {
     return (
       <Fragment>
         <ul className='app__nav'>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/about">About</NavLink></li>
+          <li><NavLink to="/events">Events</NavLink></li>
+          <li><NavLink to="/contact">Contact</NavLink></li>
         </ul>
       </Fragment>
     )

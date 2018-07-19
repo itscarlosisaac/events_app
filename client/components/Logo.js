@@ -5,7 +5,7 @@ export default class Logo extends Component {
   render() {
     return (
       <div>
-          <img src="./assets/logo.svg" width={this.props.width} height="auto" />
+          <img src="/assets/logo.svg" width={this.props.width} height="auto" />
       </div>
     )
   }

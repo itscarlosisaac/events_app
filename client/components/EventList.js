@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import Event from './Event';
 import ArrowRight from 'React-icons/lib/md/keyboard-arrow-right'
 import Data from '../dummy/data';
-
+import { NavLink } from 'react-router-dom';
 export default class EventList extends Component {
 
   state = {
@@ -23,15 +23,17 @@ export default class EventList extends Component {
           </header>
           <div className="app__events">
           {
-            this.state.events.map( (event) => {
-              return <Event data={event} />
+            this.state.events.map( (event, index) => {
+              return <Event key={`event-${index}`} data={event} />
             }) 
           }
           </div>
-          <button className="app__button app__button--all-events">
-            All Events
-            <ArrowRight size={20} color={"#fff"} />
-          </button>
+          <NavLink to="/events">
+            <button className="app__button app__button--all-events">
+              All Events
+              <ArrowRight size={20} color={"#fff"} />
+            </button>
+          </NavLink>
         </div>
       </Fragment>
     )
