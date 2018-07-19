@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import IoMaker from 'react-icons/lib/io/android-pin';
-import IoCalendar from 'react-icons/lib/io/ios-calendar'
+import IoMaker from 'React-icons/lib/io/android-pin';
+import IoCalendar from 'React-icons/lib/io/ios-calendar'
 
 export default class Hero extends Component {
   render() {

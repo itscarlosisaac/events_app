@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Logo from './Logo'
-import IoSocialFacebook from 'react-icons/lib/fa/facebook'
-import IoSocialTwitter from 'react-icons/lib/fa/twitter'
-import IoSocialPinterest from 'react-icons/lib/fa/pinterest-p'
+import IoSocialFacebook from 'React-icons/lib/fa/facebook'
+import IoSocialTwitter from 'React-icons/lib/fa/twitter'
+import IoSocialPinterest from 'React-icons/lib/fa/pinterest-p'
 
 export default class Footer extends Component {
   render() {

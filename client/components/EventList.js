@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Event from './Event';
-import ArrowRight from 'react-icons/lib/md/keyboard-arrow-right'
+import ArrowRight from 'React-icons/lib/md/keyboard-arrow-right'
 import Data from '../dummy/data';
 
 export default class EventList extends Component {
